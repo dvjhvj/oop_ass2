@@ -3,47 +3,61 @@
 using namespace std;
 
 class Circle {
-public:
-    double radius;
-    string color;
+    private:
+        double radius;
+        string color;
+    public:
+        Circle() {}
 
-    double circumference() {
-        return 2 * M_PI * radius;
-    }
+        void setRadius(double r) {radius = r;}
+        double getRadius () {return radius;}
+        void setColor(string c) {color = c;}
+        string getColor () {return color;}
 
-    double area() {
-        return M_PI * radius * radius;
-    }
+        double circumference() {
+            return 2 * M_PI * radius;
+        }
 
-    bool isValid() {
-        return radius > 0;
-    }
+        double area() {
+            return M_PI * radius * radius;
+        }
 
-    void displayColor() {
-        cout << "Color: " << color << endl;
-    }
+        bool isValid() {
+            return radius > 0;
+        }
+
+        void displayColor() {
+            cout << "Color: " << color << endl;
+        }
+
+        void input_Radius() {
+            double r;
+            cin >> r;
+            setRadius(r);
+        }
+
+        void input_Color() {
+            string c;
+            cin >> c;
+            setColor(c);
+        }
 };
 
 int main() {
     Circle circle1;
+    cout << "Nhap ban kinh hinh tron: ";
+    circle1.input_Radius();
 
-    // Nhập bán kính hợp lệ
-    do {
-        cout << "Nhap ban kinh hinh tron: ";
-        cin >> circle1.radius;
-        if (!circle1.isValid()) {
-            cout << "Ban kinh khong hop le. Vui long nhap lai!" << endl;
-        }
-    } while (!circle1.isValid());
-
-    // Nhập màu
+    while (!circle1.isValid()) {
+        cout << "Ban kinh khong hop le. Vui long nhap lai: ";
+        circle1.input_Radius();
+    }
+        
     cout << "Nhap mau sac hinh tron: ";
-    cin >> circle1.color;
+    circle1.input_Color();
 
-    // Xuất kết quả
     cout << "Chu vi hinh tron: " << circle1.circumference() << " don vi" << endl;
     cout << "Dien tich hinh tron: " << circle1.area() << " don vi vuong" << endl;
     circle1.displayColor();
-
     return 0;
-}
+    }
