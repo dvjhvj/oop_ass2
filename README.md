@@ -46,26 +46,45 @@ In Visual Studio Code (VSC), you can run your code in **3 ways**:
 ## 📚 What I Learned  
 
 From this assignment, I improved my understanding of:  
-- How to define and use **classes and objects** in C++.  
-- Basic OOP concepts such as attributes, methods, and encapsulation.  
-- Writing and compiling simple C++ programs in Visual Studio Code.  
-- Using **Markdown** to create structured documentation.  
-- The role of `this->` pointer in constructors:  
-  - When parameter names are the same as attribute names, `this->` is required to distinguish between them.  
-  - Example:  
-    ```cpp
-    class Car {
-    private:
-        string brand;
-        int year;
-    public:
-        Car(string brand, int year) {
-            this->brand = brand; // use this-> to avoid ambiguity
-            this->year = year;
-        }
-    };
-    ```
-  - If different parameter names are used, `this->` is optional (e.g., `Car(string b, int y) { brand = b; year = y; }`).  
+1. How to define and use **classes and objects** in C++.
+2. Basic OOP concepts such as attributes and methods.
+3. Writing and compiling simple C++ programs in Visual Studio Code.
+4. Using **Markdown** to create structured documentation.
+5. __The role of `this->` pointer in constructors:__  
+   - When parameter names are the same as attribute names, `this->` is required to distinguish between them.  
+   - Example:  
+     ```cpp
+     class Car {
+     private:
+         string brand;
+         int year;
+     public:
+         Car(string brand, int year) {
+             this->brand = brand; // use this-> to avoid ambiguity
+             this->year = year;
+         }
+     };
+     ```
+   - If different parameter names are used, `this->` is optional (e.g., `Car(string b, int y) { brand = b; year = y; }`).
+ 
+6. **Constructors and Getters/Setters in C++:**  
+   - Constructors are used to initialize an object with values immediately when it is created.  
+     ```cpp
+     Book(string t, string au) {
+         title = t;
+         author = au;
+     }
+     Book b("Conan", "Gosho Aoyama"); // quick initialization
+     ```  
+   - If a parameterized constructor is written, the compiler will not automatically generate a default one → we must define it manually if needed:  
+     ```cpp
+     Book() {} // default constructor
+     ```  
+   - Getters and setters allow accessing and modifying private attributes after the object is created:  
+     ```cpp
+     b.setTitle("Harry Potter");
+     cout << b.getTitle();
+     ```  
 
 
     
