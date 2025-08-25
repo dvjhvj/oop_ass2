@@ -2,18 +2,25 @@
 using namespace std;
 
 class Account {
-    public:
+    private:
         string accountNumber;
         double balance;
         string ownerName;
         double MinimumBalance;
+    public:
+        Account () {}
 
-       void deposit(double amount) {
+        void setAccNumber(string num) {accountNumber = num;}
+        void setBalance(double b) {balance = b;}
+        void setOwnName(string n) {ownerName = n;}
+        void setMin(double m) {MinimumBalance = m;}
+
+        void deposit(double amount) {
             balance += amount;
             cout << "Deposited: " << amount << endl;
-       }
+        }
        
-       void withdraw(double amount) {
+        void withdraw(double amount) {
             if (amount > balance) {
                 cout << "Insufficient funds for withdrawal." << endl;
             } else if (balance - amount < MinimumBalance) {
@@ -35,10 +42,10 @@ class Account {
 
 int main() {
     Account acc1;
-    acc1.accountNumber = "123456789";
-    acc1.balance = 1000.0;
-    acc1.ownerName = "EnKay";
-    acc1.MinimumBalance = 100.0;
+    acc1.setAccNumber("123456789");
+    acc1.setBalance(1000.0);
+    acc1.setOwnName("Enkay");
+    acc1.setMin(500.0);
 
     acc1.displayBalance();
     acc1.deposit(500.0);    
@@ -46,6 +53,8 @@ int main() {
     acc1.withdraw(200.0);
     acc1.displayBalance();
     acc1.withdraw(1500.0); //Thử rút quá số dư
+    acc1.displayBalance();
+    acc1.withdraw(801);  //Thử rút quá số dư tối thiểu
     acc1.displayBalance();
 
     return 0;
