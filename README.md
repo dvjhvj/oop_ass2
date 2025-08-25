@@ -8,8 +8,6 @@
   <b>Subject:</b> Object - Oriented Programming
 </p>
 
-
-
 ## 📖 Overview  
 This repository provides a collection of simple C++ programs designed to practice the fundamentals of Object-Oriented Programming (OOP).  
 Each example demonstrates how to define classes, create objects, and implement basic methods in C++.  
@@ -49,4 +47,19 @@ In Visual Studio Code (VSC), you can run your code in **3 ways**:
      - `fileName` = the name of the executable (you can choose another name, but usually keep it the same as your source file for clarity).
     
 ## 🤖 About the using AI in learning and doing process  
+
+The AI tool I used most frequently is **ChatGPT**. In this assignment, AI mainly supported me in **English writing** rather than coding.  
+
+- **Advantages:**  
+  - These exercises are fundamental, so it was straightforward to write the code myself according to each requirement.  
+  - I had already practiced using Markdown in a previous semester, which made it easier to format this README file.  
+
+- **Challenges and how I addressed them:**  
+  - **Variable naming in English:** sometimes I had no ideas for meaningful names → AI provided suggestions.  
+  - **English writing in Notes and the README file:**  
+    - Sometimes I first wrote in Vietnamese and then asked AI to translate it into English (applied in Section 3).  
+    - Other times I drafted the content in English based on my vocabulary and ideas, then asked AI to shorten and refine it (applied in Section 2).  
+  - **Markdown formatting:** I outlined the structure I wanted, then asked AI to generate a proper layout (applied in the introduction section).  
+
+
 
