@@ -2,9 +2,14 @@
 using namespace std;
 
 class Student {
-    public:
+    private:
         string name;
         double grade;
+    public:
+        Student(string n, double g) {
+            name = n;
+            grade = g;
+        }
 
         void displayInfo() {
             cout << "Name: " << name << endl;
@@ -13,9 +18,7 @@ class Student {
     };
 
 int main() {
-    Student student1;
-    student1.name = "John";
-    student1.grade = 8.5;
+    Student student1("John", 8.5);
     student1.displayInfo();
     return 0;
 }
