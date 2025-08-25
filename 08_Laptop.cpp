@@ -2,12 +2,19 @@
 using namespace std;
 
 class Laptop {
-    public:
+    private:
         string brand;
         string model;
         int ram; //RAM tính bằng GB
         int storage; //ổ cứng tính bằng GB
         int gpu; // Since there are many different types of graphics cards, we simplify the GPU attribute as a performance score from 1 to 10 with 1 = very weak and 10 = very powerful
+    public:
+        Laptop() {}
+        void setBrand(string br) {brand = br;}
+        void setModel(string m) {model = m;}
+        void setRam(int r) {ram = r;}
+        void setStorage(int s) {storage = s;}
+        void setGpu(int g) {gpu = g;}
 
         void displayInfo() {
             cout << "Brand: " << brand << endl;
@@ -36,11 +43,11 @@ class Laptop {
 
 int main() {
     Laptop laptop1;
-    laptop1.brand = "Dell";
-    laptop1.model = "XPS 13";
-    laptop1.ram = 8; // RAM 8 GB
-    laptop1.storage = 256; // ổ cứng 256GB
-    laptop1.gpu = 6; // GPU performance score of 6
+    laptop1.setBrand("Dell");
+    laptop1.setModel("XPS 13");
+    laptop1.setRam(8); // RAM 8 GB
+    laptop1.setStorage(256); // ổ cứng 256GB
+    laptop1.setGpu(6); // GPU performance score of 6
 
     laptop1.displayInfo();
     // Kiểm tra xem laptop có đủ RAM để chạy phần mềm yêu cầu 16GB RAM
