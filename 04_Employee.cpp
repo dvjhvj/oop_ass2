@@ -2,9 +2,11 @@
 using namespace std;
 
 class Employee {
-    public:
+    private:
         string name;
         double salary;
+    public:
+        Employee (string n, double s) {name = n; salary = s;}
 
         void displayInfo() {
             cout << "Name: " << name << endl;
@@ -13,9 +15,7 @@ class Employee {
     };
 
 int main() {
-    Employee employee1;
-    employee1.name = "Alice";
-    employee1.salary = 50000;
+    Employee employee1("Alice", 50000);
     employee1.displayInfo();
     return 0;
 }
