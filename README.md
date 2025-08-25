@@ -47,7 +47,7 @@ In Visual Studio Code (VSC), you can run your code in **3 ways**:
 
 From this assignment, I improved my understanding of:  
 - How to define and use **classes and objects** in C++.  
-- Basic OOP concepts such as attributes, methods, and encapsulation.  
+- Basic OOP concepts such as attributes and methods.  
 - Writing and compiling simple C++ programs in Visual Studio Code.  
 - Using **Markdown** to create structured documentation.  
 
