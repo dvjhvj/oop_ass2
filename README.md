@@ -47,11 +47,26 @@ In Visual Studio Code (VSC), you can run your code in **3 ways**:
 
 From this assignment, I improved my understanding of:  
 - How to define and use **classes and objects** in C++.  
-- Basic OOP concepts such as attributes and methods.  
+- Basic OOP concepts such as attributes, methods, and encapsulation.  
 - Writing and compiling simple C++ programs in Visual Studio Code.  
 - Using **Markdown** to create structured documentation.  
+- The role of `this->` pointer in constructors:  
+  - When parameter names are the same as attribute names, `this->` is required to distinguish between them.  
+  - Example:  
+    ```cpp
+    class Car {
+    private:
+        string brand;
+        int year;
+    public:
+        Car(string brand, int year) {
+            this->brand = brand; // use this-> to avoid ambiguity
+            this->year = year;
+        }
+    };
+    ```
+  - If different parameter names are used, `this->` is optional (e.g., `Car(string b, int y) { brand = b; year = y; }`).  
 
-This helped me connect theory with practice and build a stronger foundation for future OOP topics.
 
     
 ## 🤖 About the using AI in learning and doing process  
