@@ -65,9 +65,9 @@ The AI tool I used most frequently is **ChatGPT**. In this assignment, AI mainly
 - **Challenges and how I addressed them:**  
   - **Variable naming in English:** sometimes I had no ideas for meaningful names → AI provided suggestions.  
   - **English writing in Notes and the README file:**  
-    - Sometimes I first wrote in Vietnamese and then asked AI to translate it into English (applied in Section 3).  
-    - Other times I drafted the content in English based on my vocabulary and ideas, then asked AI to shorten and refine it (applied in Section 2).  
-  - **Markdown formatting:** I outlined the structure I wanted, then asked AI to generate a proper layout (applied in the introduction section).  
+    - Sometimes I first wrote in Vietnamese and then asked AI to translate it into English _(applied in Section 3)_.  
+    - Other times I drafted the content in English based on my vocabulary and ideas, then asked AI to shorten and refine it _(applied in Section 2)_.  
+  - **Markdown formatting:** I outlined the structure I wanted, then asked AI to generate a proper layout _(applied in the introduction section)_.  
 
 
 
