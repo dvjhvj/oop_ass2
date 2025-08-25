@@ -2,11 +2,17 @@
 using namespace std;
 
 class Person {
-    public:
+    private:
         string name;
         int age;
         string address;
         string phoneNumber;
+    public:
+        Person() {}
+        void setName(string n) {name = n;}
+        void setAge(int a) {age = a;}
+        void setAddress(string ad) {address = ad;}
+        void setPhoneNumber(string p) {phoneNumber = p;}
 
         void displayInfo() {
             cout << "Name: " << name << endl;
@@ -31,10 +37,10 @@ class Person {
 
 int main() {
     Person person1;
-    person1.name = "John Doe";
-    person1.age = 20;
-    person1.address = "123 Main St";
-    person1.phoneNumber = "090-000-2345";
+    person1.setName("John Doe");
+    person1.setAge(20);
+    person1.setAddress("123 Main St");
+    person1.setPhoneNumber("090-000-2345");
 
     person1.greet();
     person1.displayInfo();
