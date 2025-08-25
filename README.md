@@ -9,16 +9,13 @@
 </p>
 
 ## 📖 Overview  
+
 This repository provides a collection of simple C++ programs designed to practice the fundamentals of Object-Oriented Programming (OOP).  
 Each example demonstrates how to define classes, create objects, and implement basic methods in C++.  
 
 The exercises cover real-world entities such as cars, students, books, employees, and more.  
-They are intended for beginners who want to strengthen their understanding of classes and objects in C++.  
+They are intended for beginners who want to strengthen their understanding of OOP concepts through small, practical programs.  
 
-By following these examples, you will learn how to:
-- Define classes with attributes and methods.  
-- Create and use objects in C++.  
-- Apply OOP principles in small, practical programs. 
  
 ## 🚀 How to Run Code
 
@@ -45,6 +42,17 @@ In Visual Studio Code (VSC), you can run your code in **3 ways**:
    - **Note:**  
      - `fileName.cpp` = the name of your C++ file.  
      - `fileName` = the name of the executable (you can choose another name, but usually keep it the same as your source file for clarity).
+
+## 📚 What I Learned  
+
+From this assignment, I improved my understanding of:  
+- How to define and use **classes and objects** in C++.  
+- Basic OOP concepts such as attributes, methods, and encapsulation.  
+- Writing and compiling simple C++ programs in Visual Studio Code.  
+- Using **Markdown** to create structured documentation.  
+
+This helped me connect theory with practice and build a stronger foundation for future OOP topics.
+
     
 ## 🤖 About the using AI in learning and doing process  
 
